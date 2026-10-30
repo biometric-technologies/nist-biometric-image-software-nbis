@@ -64,13 +64,13 @@ libs:
 config:
 	@if [ "$(MSYS_FLAG)" = "-D__MSYS__" ]; then \
 		echo "Building openjp2 library with MSYS..."; \
-		(cd $(DIR_SRC_LIB)/openjp2 && mkdir -p build && cd build && cmake -DBUILD_THIRDPARTY:BOOL=ON -DBUILD_SHARED_LIBS:BOOL=OFF -G "MSYS Makefiles" -D NBIS_ROOT="$(DIR_ROOT)" -DCMAKE_C_FLAGS="$(ARCH_FLAG) -O2 -w" ..) || exit 1; \
+		(cd $(DIR_SRC_LIB)/openjp2 && mkdir -p build && cd build && cmake -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DBUILD_THIRDPARTY:BOOL=ON -DBUILD_SHARED_LIBS:BOOL=OFF -G "MSYS Makefiles" -D NBIS_ROOT="$(DIR_ROOT)" -DCMAKE_C_FLAGS="$(ARCH_FLAG) -O2 -w" ..) || exit 1; \
 	elif [ "$(CYGWIN_FLAG)" = "-D__CYGWIN__" ]; then \
 		echo "Building openjp2 library with CYGWIN..."; \
-		(cd $(DIR_SRC_LIB)/openjp2 && mkdir -p build && cd build && cmake -DBUILD_THIRDPARTY:BOOL=ON -DBUILD_SHARED_LIBS:BOOL=OFF -D NBIS_ROOT="$(DIR_ROOT)" -DCMAKE_C_FLAGS="$(ARCH_FLAG) -O2 -w" -DCMAKE_LEGACY_CYGWIN_WIN32=0 ..) || exit 1; \
+		(cd $(DIR_SRC_LIB)/openjp2 && mkdir -p build && cd build && cmake -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DBUILD_THIRDPARTY:BOOL=ON -DBUILD_SHARED_LIBS:BOOL=OFF -D NBIS_ROOT="$(DIR_ROOT)" -DCMAKE_C_FLAGS="$(ARCH_FLAG) -O2 -w" -DCMAKE_LEGACY_CYGWIN_WIN32=0 ..) || exit 1; \
 	else \
 		echo "Building openjp2 library..."; \
-		(cd $(DIR_SRC_LIB)/openjp2 && mkdir -p build && cd build && cmake -DBUILD_THIRDPARTY:BOOL=ON -DBUILD_SHARED_LIBS:BOOL=OFF -D NBIS_ROOT="$(DIR_ROOT)" -DCMAKE_C_FLAGS="$(ARCH_FLAG) -O2 -w" ..) || exit 1; \
+		(cd $(DIR_SRC_LIB)/openjp2 && mkdir -p build && cd build && cmake -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DBUILD_THIRDPARTY:BOOL=ON -DBUILD_SHARED_LIBS:BOOL=OFF -D NBIS_ROOT="$(DIR_ROOT)" -DCMAKE_C_FLAGS="$(ARCH_FLAG) -O2 -w" ..) || exit 1; \
 	fi;
 #
 install:
