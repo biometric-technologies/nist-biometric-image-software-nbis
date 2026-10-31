@@ -3164,3 +3164,99 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "cmake/TestLargeFiles.cmake:29 (try_compile)"
+      - "CMakeLists.txt:218 (OPJ_TEST_LARGE_FILES)"
+    directories:
+      source: "/sessions/rcw-012ydhvivwnzczpozwrttprf/repos/nist-biometric-image-software-nbis/openjp2/src/lib/openjp2/build/CMakeFiles/CMakeTmp"
+      binary: "/sessions/rcw-012ydhvivwnzczpozwrttprf/repos/nist-biometric-image-software-nbis/openjp2/src/lib/openjp2/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-fPIC -O2 -w"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/sessions/rcw-012ydhvivwnzczpozwrttprf/repos/nist-biometric-image-software-nbis/openjp2/src/lib/openjp2/cmake"
+    buildResult:
+      variable: "FILE64_OK"
+      cached: true
+      stdout: |
+        Change Dir: '/sessions/rcw-012ydhvivwnzczpozwrttprf/repos/nist-biometric-image-software-nbis/openjp2/src/lib/openjp2/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /sessions/rcw-012ydhvivwnzczpozwrttprf/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_33298/fast
+        gmake[3]: Entering directory '/sessions/rcw-012ydhvivwnzczpozwrttprf/repos/nist-biometric-image-software-nbis/openjp2/src/lib/openjp2/build/CMakeFiles/CMakeTmp'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_33298.dir/build.make CMakeFiles/cmTC_33298.dir/build
+        gmake[4]: Entering directory '/sessions/rcw-012ydhvivwnzczpozwrttprf/repos/nist-biometric-image-software-nbis/openjp2/src/lib/openjp2/build/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_33298.dir/TestFileOffsetBits.c.o
+        /usr/bin/cc   -fPIC -O2 -w  -o CMakeFiles/cmTC_33298.dir/TestFileOffsetBits.c.o -c /sessions/rcw-012ydhvivwnzczpozwrttprf/repos/nist-biometric-image-software-nbis/openjp2/src/lib/openjp2/cmake/TestFileOffsetBits.c
+        Linking C executable cmTC_33298
+        /sessions/rcw-012ydhvivwnzczpozwrttprf/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_33298.dir/link.txt --verbose=1
+        /usr/bin/cc -fPIC -O2 -w  CMakeFiles/cmTC_33298.dir/TestFileOffsetBits.c.o -o cmTC_33298
+        gmake[4]: Leaving directory '/sessions/rcw-012ydhvivwnzczpozwrttprf/repos/nist-biometric-image-software-nbis/openjp2/src/lib/openjp2/build/CMakeFiles/CMakeTmp'
+        gmake[3]: Leaving directory '/sessions/rcw-012ydhvivwnzczpozwrttprf/repos/nist-biometric-image-software-nbis/openjp2/src/lib/openjp2/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "cmake/TestLargeFiles.cmake:94 (try_compile)"
+      - "CMakeLists.txt:218 (OPJ_TEST_LARGE_FILES)"
+    directories:
+      source: "/sessions/rcw-012ydhvivwnzczpozwrttprf/repos/nist-biometric-image-software-nbis/openjp2/src/lib/openjp2/build/CMakeFiles/CMakeTmp"
+      binary: "/sessions/rcw-012ydhvivwnzczpozwrttprf/repos/nist-biometric-image-software-nbis/openjp2/src/lib/openjp2/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-fPIC -O2 -w"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/sessions/rcw-012ydhvivwnzczpozwrttprf/repos/nist-biometric-image-software-nbis/openjp2/src/lib/openjp2/cmake"
+    buildResult:
+      variable: "FSEEKO_COMPILE_OK"
+      cached: true
+      stdout: |
+        Change Dir: '/sessions/rcw-012ydhvivwnzczpozwrttprf/repos/nist-biometric-image-software-nbis/openjp2/src/lib/openjp2/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /sessions/rcw-012ydhvivwnzczpozwrttprf/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_78d75/fast
+        gmake[3]: Entering directory '/sessions/rcw-012ydhvivwnzczpozwrttprf/repos/nist-biometric-image-software-nbis/openjp2/src/lib/openjp2/build/CMakeFiles/CMakeTmp'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_78d75.dir/build.make CMakeFiles/cmTC_78d75.dir/build
+        gmake[4]: Entering directory '/sessions/rcw-012ydhvivwnzczpozwrttprf/repos/nist-biometric-image-software-nbis/openjp2/src/lib/openjp2/build/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_78d75.dir/TestLargeFiles.c.o
+        /usr/bin/cc   -fPIC -O2 -w  -o CMakeFiles/cmTC_78d75.dir/TestLargeFiles.c.o -c /sessions/rcw-012ydhvivwnzczpozwrttprf/repos/nist-biometric-image-software-nbis/openjp2/src/lib/openjp2/build/CMakeFiles/TestLargeFiles.c
+        Linking C executable cmTC_78d75
+        /sessions/rcw-012ydhvivwnzczpozwrttprf/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_78d75.dir/link.txt --verbose=1
+        /usr/bin/cc -fPIC -O2 -w  CMakeFiles/cmTC_78d75.dir/TestLargeFiles.c.o -o cmTC_78d75
+        gmake[4]: Leaving directory '/sessions/rcw-012ydhvivwnzczpozwrttprf/repos/nist-biometric-image-software-nbis/openjp2/src/lib/openjp2/build/CMakeFiles/CMakeTmp'
+        gmake[3]: Leaving directory '/sessions/rcw-012ydhvivwnzczpozwrttprf/repos/nist-biometric-image-software-nbis/openjp2/src/lib/openjp2/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "thirdparty/libtiff/CMakeLists.txt:230 (TRY_COMPILE)"
+    directories:
+      source: "/sessions/rcw-012ydhvivwnzczpozwrttprf/repos/nist-biometric-image-software-nbis/openjp2/src/lib/openjp2/build/thirdparty/libtiff/CMakeFiles/CMakeTmp"
+      binary: "/sessions/rcw-012ydhvivwnzczpozwrttprf/repos/nist-biometric-image-software-nbis/openjp2/src/lib/openjp2/build/thirdparty/libtiff/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-fPIC -O2 -w"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/sessions/rcw-012ydhvivwnzczpozwrttprf/repos/nist-biometric-image-software-nbis/openjp2/src/lib/openjp2/cmake"
+    buildResult:
+      variable: "C_HAS_inline"
+      cached: true
+      stdout: |
+        Change Dir: '/sessions/rcw-012ydhvivwnzczpozwrttprf/repos/nist-biometric-image-software-nbis/openjp2/src/lib/openjp2/build/thirdparty/libtiff/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /sessions/rcw-012ydhvivwnzczpozwrttprf/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_15502/fast
+        gmake[3]: Entering directory '/sessions/rcw-012ydhvivwnzczpozwrttprf/repos/nist-biometric-image-software-nbis/openjp2/src/lib/openjp2/build/thirdparty/libtiff/CMakeFiles/CMakeTmp'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_15502.dir/build.make CMakeFiles/cmTC_15502.dir/build
+        gmake[4]: Entering directory '/sessions/rcw-012ydhvivwnzczpozwrttprf/repos/nist-biometric-image-software-nbis/openjp2/src/lib/openjp2/build/thirdparty/libtiff/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_15502.dir/test_inline.c.o
+        /usr/bin/cc -Dinline=inline  -fPIC -O2 -w  -o CMakeFiles/cmTC_15502.dir/test_inline.c.o -c /sessions/rcw-012ydhvivwnzczpozwrttprf/repos/nist-biometric-image-software-nbis/openjp2/src/lib/openjp2/thirdparty/libtiff/test_inline.c
+        Linking C executable cmTC_15502
+        /sessions/rcw-012ydhvivwnzczpozwrttprf/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_15502.dir/link.txt --verbose=1
+        /usr/bin/cc -fPIC -O2 -w  CMakeFiles/cmTC_15502.dir/test_inline.c.o -o cmTC_15502
+        gmake[4]: Leaving directory '/sessions/rcw-012ydhvivwnzczpozwrttprf/repos/nist-biometric-image-software-nbis/openjp2/src/lib/openjp2/build/thirdparty/libtiff/CMakeFiles/CMakeTmp'
+        gmake[3]: Leaving directory '/sessions/rcw-012ydhvivwnzczpozwrttprf/repos/nist-biometric-image-software-nbis/openjp2/src/lib/openjp2/build/thirdparty/libtiff/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+...

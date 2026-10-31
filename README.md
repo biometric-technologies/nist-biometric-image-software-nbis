@@ -44,7 +44,7 @@ bozorth3 probe.xyt gallery.xyt  # prints the match score
 
 - [biometric-converter](https://github.com/biometric-technologies/biometric-converter): the converter that depends on this build.
 - [nist-biometric-interchange-software-biomdi](https://github.com/biometric-technologies/nist-biometric-interchange-software-biomdi): mirror of NIST's BiomDI application package.
-- [docs](https://github.com/biometric-technologies/docs): source of the developer documentation at docs.iriscan.net.
+- [docs](https://github.com/biometric-technologies/docs): source of the developer documentation at docs.iriscan.com.
 
 ## License
 
