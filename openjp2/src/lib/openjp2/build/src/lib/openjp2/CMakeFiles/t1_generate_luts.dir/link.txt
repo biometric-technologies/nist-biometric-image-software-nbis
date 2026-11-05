@@ -1,1 +1,0 @@
-/usr/bin/cc -fPIC -O2 -w CMakeFiles/t1_generate_luts.dir/t1_generate_luts.c.o -o ../../../bin/t1_generate_luts  -lm
