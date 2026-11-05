@@ -52,4 +52,4 @@ Public domain. The software was developed at NIST by employees of the US Federal
 
 ## Contact
 
-Questions about this mirror or the converter: info@iriscan.net, https://www.iriscan.com. For NBIS itself, see NIST's fingerprint software page.
+Questions about this mirror or the converter: info@iriscan.com, https://www.iriscan.com. For NBIS itself, see NIST's fingerprint software page.
